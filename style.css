@@ -1,0 +1,362 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #152B63;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 26px;
+  margin: 24px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background: #FFFFFF;
+  margin: 24px;
+  color: black;
+}
+
+.logos {
+  float: right;
+  width: 37px;
+  height: 37px;
+  left: 1416px;
+}
+
+.container-fluid .container {
+  border: groove;
+  text-align: center;
+}
+
+.container-fluid {
+  
+}
+
+.row 
+.row-3
+.row-5 {
+  border: 2px solid purple;
+}
+.col {
+  border: 3px solid gold;
+}
+
+.circle > img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 50;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Head-Page */
+#head-photo {
+  width: 1217px;
+  height: 700px;
+}
+
+.flex-container-1 {
+  display: flex;
+  /*background-color: DodgerBlue;*/
+  justify-content: center;
+}
+
+.flex-container-1 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#box-1 {
+  width: 445px;
+  height: 630px;
+  margin-top: 150px;
+}
+
+#box-2 {
+  width: 882px;
+  height: 630px;
+  margin-top: 150px;
+  background: #D0E2EA;
+}
+
+#box-3 {
+  width: 250px;
+  height: 250px;
+  background: #FFEAEA;
+}
+
+#box-4 {
+  width: 642px;
+  height: 358px;
+  background: #CCCCCC;
+}
+
+/* Podcast*/
+#podcast {
+width: 1126px;
+height: 377px;
+
+border: 5px solid #C8E8AF;
+box-sizing: border-box;
+border-radius: 25px;
+}
+.flex-container-2 {
+  display: flex;
+  background-color: #FFEAEA;
+  justify-content: center;
+}
+
+.flex-container-2 > div {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-size: 30px;
+  width: 540px;
+  height: 346px;
+}
+#art-box-1 {
+  background: #FFFFFF;
+}
+#art-box-2 {
+  background: #C8E8AF;
+}
+#art-box-3 {
+  background: #E5E5E5;
+}
+#art-box-4 {
+  background: #D0E2EA;
+}
+#art-box-5 {
+  background: #CCCCCC;
+}
+#art-box-6 {
+  background: #DFD0EA;
+}
+
+/* motivational quote*/
+.quote-box{
+  display: flex;
+  width: 1217px;
+  height: 335px;
+
+  background: #C8E8AF;
+}
+
+.quote-box> div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.quote {
+  justify-content: center;
+}
+
+/* Let's Connect */
+#footer {
+  background: #152B63;
+  height: 500px;
+}
+
+#sub-head {
+  width: 215px;
+  height: 112px;
+  left: 62px;
+  top: 92px;
+
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #D06565;
+}
+
+#sub-head-1 {
+  width: 281px;
+  height: 28px;
+  left: 1326px;
+  top: 184px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #D06565;
+}
+
+/* selfcaretips@gmail.com */
+#email {
+  width: 306px;
+  height: 56px;
+  left: 62px;
+  top: 266px;
+
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
+
+/* Phone: 415-579-7013 */
+
+#phone {
+  width: 356px;
+  height: 81px;
+  left: 62px;
+  top: 301px;
+
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
+
+.info {
+  width: 200px;
+  height: 28px;
+
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
+
+.space {
+  padding: 30px;
+}
+
+.button {
+  width: 194px;
+  height: 68px;
+  left: 586px;
+  top: 630px;
+
+  background: #B44646;
+  border-radius: 50px;
+}
+
+.submit {
+  font-family: "Alata", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
+/* Articles, Videos Page*/
+
+/* Calming Sounds, Podcasts*/
+.head {
+position: absolute;
+width: 1624px;
+height: 760px;
+left: 67px;
+top: 288px;
+text-align: left;
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+}
+
+.summary {
+position: absolute;
+width: 549px;
+height: 357px;
+left: 72px;
+top: 327px;
+
+font-family: Alata;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 72px;
+/* or 206% */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+
+}
+
+.pod-photo {
+position: absolute;
+width: 845px;
+height: 595px;
+left: 755px;
+top: 365px;
+
+}
