@@ -81,7 +81,7 @@ font-family: "Alata", sans-serif;
   align-items: center;
 }
 
-.container , .container-fluid {
+/*.container , .container-fluid {
   border: 15px black solid;
 }
 
@@ -98,7 +98,7 @@ font-family: "Alata", sans-serif;
 .col-sm-3  {
   background-color:  #152B63;
   color: white;
-}
+} */
 /* Self Care Tip */
 .circle {
   padding-top: 30px;
@@ -166,6 +166,11 @@ font-weight: normal;
 font-size: 20px;
 line-height: 30px;
   text-align: center;
+}
+
+.Self-Care {
+  border: 2px black solid;
+  padding: 20px;
 }
 
 /* Head-Page */
@@ -320,10 +325,15 @@ font-family: "Alata", sans-serif;
 
 }
 
+.audio-box {
+  padding-left: 15px;
+}
+
 /* Articles and Videos */
 .art-pic {
-  width: 350px;
+  width: 370px;
   height: 250px;
+  margin-top: 20px;
 }
 
 #art-title {
@@ -332,6 +342,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 50px;
 line-height: 80px;
+
 /* or 160% */
 
 display: flex;
@@ -340,7 +351,7 @@ align-text: center;
 justify-content: center;
 letter-spacing: -0.015em;
 
-color: #FFFFFF;
+color: black;
 
 }
 /* motivational quote*/
@@ -350,6 +361,7 @@ color: #FFFFFF;
   height: 335px;
 
   background: #C8E8AF;
+  margin-top: 20px;
 }
 
 .quote-box > div {
@@ -491,7 +503,14 @@ letter-spacing: -0.015em;
 }
 
 .pencil {
-  margin-bottom: 150px;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  border: 2px white solid;
+}
+
+.mess {
+  margin-bottom: 100px;
 }
 
 .submit {
@@ -527,13 +546,18 @@ letter-spacing: -0.015em;
   padding: 20px;
 }
 
-
+.footer-color {
+  background-color: #152B63;
+}
 
 /* Articles, Videos Page*/
 .carousel-inner {
 width: 1000px;
 height: 900px;
 
+}
+.card {
+  margin-top: 30px;
 }
 
 .caro-image {
@@ -590,9 +614,9 @@ top: 365px;
   top: 365px;
 }
 
-.row {
+/*.row {
   border: solid gold 2px;
-}
+} */
 
 .answers{
   background: #AFCCAE;
@@ -605,9 +629,11 @@ top: 365px;
 }
 
 .us {
+  display: flex;
+  text-align: center;
   border: 3px solid black;
   border-radius: 50%;
-  margin: 50px;
+  margin: 45px;
 }
 
 .new {
