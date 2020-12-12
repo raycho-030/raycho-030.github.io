@@ -6,198 +6,290 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@300&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script> 
     <title>Self-Care</title>
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
-  <a href="index.html">Home</a>
-  <a href="story.html">Our Story</a>
-  <a href="podcast.html">Calming Sounds/Podcasts</a>
-  <a href="vids.html">Videos & Articles</a>
-  <a href="tribute.html">Tribute Page</a>
-
+    <!-- Navigation  -->
     <div class="topnav">
-      <a class="#news">Home</a>
-      <a href="second.html">Our Story</a>
-      <a href="#contact">Calming Sounds/Podcast</a>
-      <a href="#about">Videos/Articles</a>
-      <a href="#tribute">Tribute Page</a>
-      <img
-        class="logos"
-        src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F395070.png?v=1606345382874"
-      />
-      <img
-        class="logos"
-        src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Ftwitter-xxl.png?v=1606345139229"
-      />
-      <img
-        class="logos"
-        src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Finstagram-xxl.png?v=1606344775715"
-      />
-      <img
-        class="logos"
-        src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Ffacebook-xxl.png?v=1606344919962"
-      />
-    </div>
-
- 
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="podcast.html">Calming Sounds/Podcasts</a>
+    <a href="vids.html">Videos & Articles</a>
+    <a href="tribute.html">Tribute Page</a>
+  </div>
+    
     <!-- Head Photo -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <div class="thumbnail text-center">
+          <center>
+            <img
+              id="head-photo"
+              src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fc8c199bd-acf6-4bbd-8530-4accfe0588c2.image.png?v=1606437836985"
+              class="img-fluid"
+              alt="Eastern"
+            />
+          </center>
+
+          <div class="caption col-md-3">
+            <p class="headerFont">SELF CARE IS IMPORTANT</p>
+            <button id ="dark-button" type="button" class="btn btn-dark">
+                Share Your Story...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- what is self care-->
+    <div class="container-fluid">
+      <div class="flex-container-1">
+        <div>
           <img
-            id="head-photo"
-            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fc8c199bd-acf6-4bbd-8530-4accfe0588c2.image.png?v=160643783"
+            id="box-1"
+            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fself-care-tips-1.jpg?v=1607475670875"
+          />
+        </div>
+        <div id="box-2">
+          <h1 class="blue-head">What is Self Care?</h1>
+          <p class="blue-text">
+            Self care is when you are simply being mindful of your own needs, so you
+            are able to better support and be there for the people you love.
+            When you take care of yourself, you are able to function better both physically and mentally. Self Care can come in
+            so many different forms. In this website, we'll show you just how.
+          </p>
+        </div>
+      </div>
+      <!-- why is self care important? -->
+      <div class="flex-container-1">
+        <div id="box-3" class="pink-head">
+          <h2>Why is Self Care imporant?</h2>
+        </div>
+        <div id="box-4" class="blue-text">
+          <p class="pink-text">
+            Self care is important to maintain a healthy relationship with
+            yourself. When you become exposed to Self Care, it'll not only boost one's confidence but also one's self esteem.
+            Without self-care, a lot of health problems may occur such as anxiety
+            and depression, to insomina and heart diseases.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Podcast -->
+
+      <div class="container pod-border">
+        <div class="row pod-head">
+          <h3>
+            Your Daily Self-Care Podcast
+          </h3>
+          <p class="pod-text">
+            Episode 3: Coping with Greif + Anxiety during a Pandemic 
+          </p>
+        </div>
+        <div class="row">
+          <div class="audio-box">
+        <audio controls>
+          <source src="horse.ogg" type="audio/ogg" />
+          <source src="horse.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+        </div>  
+        <div class="row">
+          <button id="light-button" type="button" class="btn btn-info">Click Here for More</button>
+          </div>  
+    </div>
+
+    
+
+    <!-- Articles and Videos -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4" id="art-title">
+          <h3>
+          Articles & Videos      
+          </h3>
+      
+        </div>
+        <div class="col-4">
+          <img class="art-pic"
+            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F5546edac-31f1-47f2-82f6-cce868fc16dc.image.png?v=1607746297662"
+          />
+        </div>
+        <div class="col-4">
+          <img class="art-pic"
+            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F01e0810e-0786-4002-bb54-77ebbd630123.image.png?v=1607648789627"
           />
         </div>
       </div>
-      <!-- what is self care-->
-      <div class="flex-container-1">
-        <div id="box-1">1</div>
-        <div id="box-2"><p1>What is Self Care?</p1></div>
-      </div>
-      <!-- why is self care important?-->
-      <div class="flex-container-1">
-        <div id="box-3">3</div>
-        <div id="box-4">4</div>
-      </div>
-    </div>
-    
-    <!-- Podcast -->
-    <div class="flex-container-3">
-      <div class="container">
-        <div class="row" id="podcast">
-          <div class="col-9">
-            <div class="row">
-              What's New
-            </div>
-            <div class="row">
-              Description Here
-            </div>
-          </div>
-          <div class="col">
-            Podcast
-          </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="art-pic"
+            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F54a7f2ed-db42-4b37-b436-d2dcbdb21ace.image.png?v=1607744400495"
+          />
+        </div>
+        <div class="col-4">
+          <img class="art-pic"
+            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fad476423-662f-4fc9-a025-b7434912028c.image.png?v=1607745117008"
+          />
+        </div>
+        <div class="col-4">
+          <img class="art-pic"
+            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fabfd6491-057a-4c32-a18c-87a65742ecf5.image.png?v=1607748138728"
+          />
         </div>
       </div>
     </div>
-        
-    <!-- Articles and Videos -->
-    <div class="flex-container-2">
-      <div id="art-box-1">1</div>
-      <div id="art-box-2">2</div>
-      <div id="art-box-3">3</div>
-    </div>
-    <div class="flex-container-2">
-      <div id="art-box-4">4</div>
-      <div id="art-box-5">5</div>
-      <div id="art-box-6">6</div>
-    </div>
-    
+
     <!-- Motivational Quote -->
     <div class="container-fluid quote-box">
-      <div class="quote">1</div>
+      <h1 class="quote">
+        “You owe yourself the love you so freely give others”
+      </h1>
     </div>
 
     <!-- Self Care Tip -->
     <div class="container-fluid">
       <div class="row">
-        <h1>
+        <div class="col tip-head">
+          <h1>
           Take a Self Care Trip
         </h1>
+        </div>
+        
       </div>
       <div class="row">
-        <p>
+        <div class="col tip-text">
+          <p>
           Whenever you have free time another self care option is traveling.
           Traveling can help you examine parts of your culture you love and
           don’t want to live without. It’s a way to look back at your life right
           now, and reflect on those who may harm you and also see the people you
           wanna take with you moving forward in the future!
         </p>
+        </div>
       </div>
 
-      <!--     <div class="circle-img container"> -->
-      
-        <div class="row">
-          <div class="col">
-            
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            
-          </div>
-        </div>
-        <div class="row">
-           <div class="col circle">
-          <img
-            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fc8e8af.png?v=1606869257266"
-            width="200px"
-            height="200px"
-          />
-          <div class="col">
-            <div>Bring the appropriate clothing</div>
-          </div>
-          <div class="centered">1.</div>
-        </div>
-          <div class="col circle">
-          <img
-            src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fffeaea.png?v=1606869327908"
-            width="200px"
-            height="200px"
-          />
-          <div class="col">
-            <div>Always let someone know where you're going</div>
-          </div>
-          <div class="centered">2.</div>
-        </div>
-          <div class="col circle">
-            <img
-              src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fd0e2ea.png?v=1606869424054"
-              width="200px"
-              height="200px"
-            />
-            <div class="col">
-              <div>Bring something to keep you busy like a book, a phone, a journal, etc</div>
-            </div>
-              <div class="centered">3.</div>
-            </div>
-          </div>
-          <div class="col circle">
-            <img
-              src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Ff4f4f4.png?v=1606869484488"
-              width="200px"
-              height="200px"
-            />
-            <div class="col">
-              <div>Remind yourself to focus on the present</div>
-            </div>
-            <div class="centered">4.</div>
-          </div>
-          </div>
-     
-    <!-- "Let's Connect" Footer -->
-    <div class="container-fluid" id="footer">
+      <!-- Image Circles -->
+      <!-- Circle Row1 -->
       <div class="row">
-        <div class="col">
+        <!-- Circle 1 -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 circle">
+              <img
+                src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fc8e8af.png?v=1606869257266"
+                width="150px"
+                height="150px"
+              />
+
+              <div class="centered circleText" style="font-size: 35px;">1.</div>
+            </div>
+
+            <div class="col-md-6 vertical-center circleText">
+              Bring the appropriate clothing
+            </div>
+          </div>
+        </div>
+
+        <!-- Circle 2 -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 circle">
+              <img
+                src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fffeaea.png?v=1606869327908"
+                width="150px"
+                height="150px"
+              />
+              <div class="centered circleText" style="font-size: 35px;">2.</div>
+            </div>
+
+            <div class="col-md-6 vertical-center circleText">
+              Always let someone know where you're going
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Circle Row2 -->
+      <div class="row">
+        <!-- Circle 3 -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 circle">
+              <img
+                src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Fd0e2ea.png?v=1606869424054"
+                width="150px"
+                height="150px"
+              />
+              <div class="centered circleText" style="font-size: 35px;">3.</div>
+            </div>
+
+            <div class="col-md-6 vertical-center circleText">
+              Bring something to keep you busy like a book, a phone, a journal,
+              etc
+            </div>
+          </div>
+        </div>
+
+        <!-- Circle 4 -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 circle">
+              <img
+                src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2Ff4f4f4.png?v=1606869484488"
+                width="150px"
+                height="150px"
+              />
+              <div class="centered circleText" style="font-size: 35px;">4.</div>
+            </div>
+
+            <div class="col-md-6 vertical-center circleText">
+              Remind yourself to focus on the present
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "Let's Connect" Footer -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
           <div class="row" id="sub-head">Let's Connect</div>
           <div class="row" id="email">selfcaretips@gmail.com</div>
           <div class="row" id="phone">Phone: 415-579-7013</div>
-          <div class="row">
+          <div class="row" id="foot-logo">
             <img
               class="logos"
               src="https://cdn.glitch.com/4e33bdc3-ed28-45ae-9c4d-a300ae6ff3b4%2F395070.png?v=1606345382874"
@@ -216,29 +308,60 @@
             />
           </div>
         </div>
-
-        <div class="col">
+        <div class="col-6">
           <div class="row">
-            <div class="col info space">First Name</div>
-            <div class="col info space">Last Name</div>
-          </div>
-          <div class="row">
-            <div class="col info pencil space">Email</div>
-            <div class="col info pencil space">Subject</div>
-          </div>
-          <div class="row h-50">
-            <div class="col-sm-12 pencil info">
-              Leave your Message here...
+            <div class="col-6 info space">
+              First Name
+            </div>
+            <div class="col-6 info space">
+              Last Name
             </div>
           </div>
-          <div class="row button submit">Submit Here</div>
+          <div class="row">
+            <div class="col-6 info space">
+              Email
+            </div>
+            <div class="col-6 info space">
+              Subject
+            </div>
+          </div>
+          <div class="row">
+            <div class="col pencil info">
+              Leave a Message...
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 button submit">
+              Submit
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <div class="row" id="sub-head-1">weekly updates</div>
-          <div class="row-5 info space">First Name</div>
-          <div class="row-5 info space">Last Name</div>
-          <div class="row-5 info space">Email...</div>
-          <div class="row-5 button submit">Subscribe</div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col weekly-head" id="sub-head-1">
+              weekly updates
+            </div>
+          </div>
+          <div class="row">
+            <div class="col weekly-info info">
+              First Name
+            </div>
+          </div>
+          <div class="row">
+            <div class="col weekly-info info">
+              Last Name
+            </div>
+          </div>
+          <div class="row">
+            <div class="col weekly-info info">
+              Email
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7 button submit">
+              Subscribe
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -247,5 +370,5 @@
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
-      </body>
+  </body>
 </html>

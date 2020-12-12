@@ -5,6 +5,40 @@ body {
   margin: 2em;
 }
 
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.headerFont{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #152B63;
+  text-align: left;
+}
+
+#dark-button {
+margin-top: 470px;
+margin-right: 100px;
+font-family: "Alata", sans-serif;
+}
+
+
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #152B63;
@@ -35,29 +69,40 @@ body {
   color: black;
 }
 
+
 .logos {
-  float: right;
-  width: 37px;
-  height: 37px;
-  left: 1416px;
+  padding: 10px;
+  width: 50px;
 }
 
-.container-fluid .container {
-  border: groove;
-  text-align: center;
+.flex-container-5 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.container-fluid {
-  
+.container , .container-fluid {
+  border: 15px black solid;
 }
 
-.row 
-.row-3
-.row-5 {
-  border: 2px solid purple;
+.row {
+  border: 10px gold solid;
 }
-.col {
-  border: 3px solid gold;
+
+.col ,
+.col-9 ,
+.col-3 ,
+.col-6 , 
+.col-2, 
+.col-4,
+.col-sm-3  {
+  background-color:  #152B63;
+  color: white;
+}
+/* Self Care Tip */
+.circle {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .circle > img {
@@ -66,7 +111,26 @@ body {
   margin: 0 auto;
 }
 
-.container {
+.circleText{
+  font-family: "Alata", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: black
+}
+
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -85,10 +149,41 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.tip-head {
+font-family: 'Roboto Condensed', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 45px;
+  text-align: center;
+  padding: 10px;
+}
+
+.tip-text {
+  font-family: 'Roboto Condensed', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+  text-align: center;
+}
+
 /* Head-Page */
+
+.bg { 
+    background-image: url("https://mimsi.dk/images/eeg.jpg");
+
+    height: 400px; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #head-photo {
   width: 1217px;
   height: 700px;
+  justify-content: center;
 }
 
 .flex-container-1 {
@@ -98,22 +193,22 @@ body {
 }
 
 .flex-container-1 > div {
-  background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
 }
 
 #box-1 {
-  width: 445px;
-  height: 630px;
+  width: 345px;
+  height: 430px;
   margin-top: 150px;
+  
 }
 
 #box-2 {
   width: 882px;
-  height: 630px;
-  margin-top: 150px;
+  height: 430px;
+  margin-top: 180px;
   background: #D0E2EA;
 }
 
@@ -121,6 +216,7 @@ body {
   width: 250px;
   height: 250px;
   background: #FFEAEA;
+  margin-right: 10px;
 }
 
 #box-4 {
@@ -129,49 +225,126 @@ body {
   background: #CCCCCC;
 }
 
-/* Podcast*/
-#podcast {
-width: 1126px;
-height: 377px;
+.blue-head {
+left: 108px;
+top: 151px;
+margin-top: 50px;
+margin-left: 15px;
 
+font-family: 'Roboto Condensed', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 45px;
+/* or 112% */
+}
+
+.blue-text {
+letter-spacing: -0.015em;
+align-items: center;
+justify-content; 
+color: #000000;
+margin-top: 80px;
+margin-left: 15px;
+
+font-family: 'Roboto Condensed', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+
+/* or 112% */
+}
+
+
+.pink-head {
+width: 237px;
+height: 230px;
+left: 7px;
+top: 10px;
+
+font-family: 'Roboto Condensed', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 45px;
+/* or 180% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000
+}
+
+.pink-text {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+/* Podcast*/
+
+.pod-border {
+position: relative;
+width: 600px;
+height: 230px;
+left: calc(50% - 1126px/2 + 249px);
+top: calc(50% - 377px/2 - 421.5px);
+margin-top: 20px;
+margin-bottom: 20px;
+  
 border: 5px solid #C8E8AF;
 box-sizing: border-box;
 border-radius: 25px;
 }
-.flex-container-2 {
-  display: flex;
-  background-color: #FFEAEA;
-  justify-content: center;
+
+.pod-head {
+  padding: 10px;
+  font-family: 'Roboto Condensed', sans-serif;  
+}
+.pod-text {
+  padding-left: 10px;
+  font-family: "Alata", sans-serif;
 }
 
-.flex-container-2 > div {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-size: 30px;
-  width: 540px;
-  height: 346px;
-}
-#art-box-1 {
-  background: #FFFFFF;
-}
-#art-box-2 {
-  background: #C8E8AF;
-}
-#art-box-3 {
-  background: #E5E5E5;
-}
-#art-box-4 {
-  background: #D0E2EA;
-}
-#art-box-5 {
-  background: #CCCCCC;
-}
-#art-box-6 {
-  background: #DFD0EA;
+audio {
+  align-items: flex-end;
 }
 
+#light-button {
+display: flex;  
+margin-top: 4px;
+margin-left: 400px;
+font-family: "Alata", sans-serif;
+ align-items: center;
+
+}
+
+/* Articles and Videos */
+.art-pic {
+  width: 350px;
+  height: 250px;
+}
+
+#art-title {
+font-family: 'Roboto Condensed', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 80px;
+/* or 160% */
+
+display: flex;
+align-items: center;
+align-text: center;
+justify-content: center;
+letter-spacing: -0.015em;
+
+color: #FFFFFF;
+
+}
 /* motivational quote*/
-.quote-box{
+.quote-box {
   display: flex;
   width: 1217px;
   height: 335px;
@@ -179,7 +352,7 @@ border-radius: 25px;
   background: #C8E8AF;
 }
 
-.quote-box> div {
+.quote-box > div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
@@ -187,7 +360,23 @@ border-radius: 25px;
 }
 
 .quote {
-  justify-content: center;
+justify-content: center;
+align-items: center;
+width: 1511px;
+height: 318px;
+left: 89px;
+top: 66px;
+font-family: 'Roboto Condensed', sans-serif;
+  
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 72px;
+/* or 150% */
+
+display: flex;
+text-align: center;
+letter-spacing: -0.015em;
 }
 
 /* Let's Connect */
@@ -212,18 +401,17 @@ border-radius: 25px;
   letter-spacing: -0.015em;
 
   color: #D06565;
+  margin: 30px;
 }
 
 #sub-head-1 {
   width: 281px;
   height: 28px;
-  left: 1326px;
-  top: 184px;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 47px;
   display: flex;
   align-items: center;
@@ -242,13 +430,14 @@ border-radius: 25px;
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 28px;
   display: flex;
   align-items: center;
   letter-spacing: -0.015em;
 
   color: #FFFFFF;
+  margin-left: 30px;
 }
 
 /* Phone: 415-579-7013 */
@@ -262,19 +451,19 @@ border-radius: 25px;
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 28px;
   display: flex;
   align-items: center;
   letter-spacing: -0.015em;
 
   color: #FFFFFF;
+  margin-left: 30px;
 }
 
 .info {
-  width: 200px;
-  height: 28px;
 
+  text-decoration: underline;
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: bold;
@@ -295,11 +484,14 @@ border-radius: 25px;
 .button {
   width: 194px;
   height: 68px;
-  left: 586px;
-  top: 630px;
+
 
   background: #B44646;
   border-radius: 50px;
+}
+
+.pencil {
+  margin-bottom: 150px;
 }
 
 .submit {
@@ -312,51 +504,223 @@ border-radius: 25px;
   align-items: center;
   text-align: center;
   letter-spacing: -0.015em;
+  margin: 30px;
 
   color: #FFFFFF;
 }
-/* Articles, Videos Page*/
 
+.logos {
+  padding: 10px;
+  width: 45px;
+}
+
+#foot-logo {
+  margin: 30px;
+}
+
+.weekly-head {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.weekly-info {
+  padding: 20px;
+}
+
+
+
+/* Articles, Videos Page*/
+.carousel-inner {
+width: 1000px;
+height: 900px;
+
+}
+
+.caro-image {
+  width: 1280px;
+  height: 700px;
+}
 /* Calming Sounds, Podcasts*/
+
+#pod-photo {
+width: 600px;
+height: 400px;
+left: 755px;
+top: 365px;
+}
+/* Our Story */
 .head {
-position: absolute;
-width: 1624px;
-height: 760px;
-left: 67px;
-top: 288px;
-text-align: left;
-background: #FFFFFF;
-border: 1px solid #000000;
-box-sizing: border-box;
+  position: absolute;
+  width: 1624px;
+  height: 760px;
+  left: 67px;
+  top: 288px;
+  text-align: left;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
 }
 
 .summary {
-position: absolute;
-width: 549px;
-height: 357px;
-left: 72px;
-top: 327px;
+  position: absolute;
+  width: 549px;
+  height: 357px;
+  left: 72px;
+  top: 327px;
 
-font-family: Alata;
-font-style: normal;
-font-weight: normal;
-font-size: 35px;
-line-height: 72px;
-/* or 206% */
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 72px;
+  /* or 206% */
 
-display: flex;
-align-items: center;
-letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
 
-color: #000000;
-
+  color: #000000;
 }
 
 .pod-photo {
-position: absolute;
-width: 845px;
-height: 595px;
-left: 755px;
-top: 365px;
+  position: absolute;
+  width: 845px;
+  height: 595px;
+  left: 755px;
+  top: 365px;
+}
 
+.row {
+  border: solid gold 2px;
+}
+
+.answers{
+  background: #AFCCAE;
+  color: white;
+  padding: 10px;
+}
+
+.name {
+  text-align: center;
+}
+
+.us {
+  border: 3px solid black;
+  border-radius: 50%;
+  margin: 50px;
+}
+
+.new {
+  background: white;
+  color: black;
+  font-weight: heavy;
+  margin: 125px;
+}
+
+.private {
+  background: white;
+}
+
+#story-quote {
+width: 800px;
+height: 400px;
+left: 296px;
+top: 1566px;
+margin-left: 150px;
+margin-bottom: 100px;
+  
+background: #FFFFFF;
+mix-blend-mode: normal;
+border: 5px solid #1321A0;
+}
+
+.help {
+  background: #d0e2ea;
+}
+
+.mission {
+  background: white;
+  color: black;
+  font-weight: heavy;
+}
+
+.zodiac {
+  background: white;
+  color: black;
+  font weight: medium;
+}
+
+#story-head {
+font-family: "Comfortaa", cursive;
+font-style: normal;
+font-weight: 800;
+font-size: 80px;
+line-height: 98px;
+/* identical to box height */
+
+padding-left: 15px;
+letter-spacing: -0.015em;
+}
+
+.story-text {
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+}
+
+.big-quote {
+  font-size: 40px;
+line-height: 85px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+text-indent: 50px;
+
+color: #1E4082;
+
+}
+
+.big-name {
+margin-left: 500px;
+  font-weight: 800;
+font-size: 25px;
+line-height: 39px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+text-indent: 50px;
+}
+
+#mission-head {
+font-family: "Comfortaa", cursive;
+font-style: normal;
+font-weight: 800;
+font-size: 80px;
+line-height: 98px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+}
+
+.mission-text {
+font-family: "Alata", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
 }
